@@ -1,0 +1,28 @@
+/* MedecinsList.css */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  li h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  li p {
+    margin: 5px 0;
+  }
+  

@@ -3,6 +3,7 @@ import SearchBar from './SearchBar';
 import Button from './Button';
 import attentionMignon from './assets/attention-mignon.png';
 import MapComponent from './Map';
+import MedecinsList from './MedecinsList';
 
 const Home = () => {
   const handleButtonClick = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         <SearchBar />
         <Button text="Afficher la Carte" onClick={handleButtonClick} />
         <MapComponent />
+        <MedecinsList />
         <h3>Sens toi en sécurité avec ta santé</h3>
         <img src={attentionMignon} alt="Attention Mignon" className="home-image" />
         <h3>Objectif Zéro Discrimination !!!</h3>

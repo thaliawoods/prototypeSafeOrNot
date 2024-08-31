@@ -32,15 +32,16 @@ const MapComponent = () => {
         {data && data.length > 0 ? (
           data.map((record) => {
             const { fields } = record;
-            const { geo_point_2d } = fields;
-            if (geo_point_2d) {
-              const [lat, lon] = geo_point_2d;
+            const { coordonnees } = fields;
+            if (coordonnees) {
+              const { lat, lon } = coordonnees;
               return (
                 <Marker key={record.recordid} position={[lat, lon]}>
                   <Popup>
                     <div>
                       <h2>{fields.nom}</h2>
                       <p>{fields.adresse}</p>
+                      <p>{fields.libelle_profession}</p>
                     </div>
                   </Popup>
                 </Marker>
