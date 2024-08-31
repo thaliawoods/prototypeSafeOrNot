@@ -26,3 +26,40 @@
     background-color: pink;
   }
   
+  .search-results {
+    margin-top: 20px;
+  }
+  
+  .search-results h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .search-results ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .search-result-item:last-child {
+    border-bottom: none;
+  }
+  
+  .result-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .result-details h4 {
+    font-size: 1.2em;
+    margin: 0 0 5px 0;
+  }
+  
+  .result-details p {
+    margin: 0;
+  }
+  
