@@ -1,0 +1,40 @@
+.footer {
+    background-color: pink;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-text {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
