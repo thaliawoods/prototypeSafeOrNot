@@ -11,7 +11,7 @@ const MedecinsList = () => {
         const response = await axios.get(
           'https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins/records?limit=20'
         );
-        console.log('Data received:', response.data.results); // Ajoutez cette ligne pour vérifier les données
+        console.log('Data received:', response.data.results); 
         setData(response.data.results);
       } catch (error) {
         console.error('Error fetching data:', error);

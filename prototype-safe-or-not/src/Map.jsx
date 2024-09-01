@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import './MapComponent.css'; 
+import './MapComponent.css';
 
 const MapComponent = () => {
   const [data, setData] = useState([]);
@@ -13,7 +13,8 @@ const MapComponent = () => {
         const response = await axios.get(
           'https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/medecins/records?limit=20'
         );
-        setData(response.data.records);
+        console.log('Data received:', response.data.results); 
+        setData(response.data.results);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -31,17 +32,16 @@ const MapComponent = () => {
         />
         {data && data.length > 0 ? (
           data.map((record) => {
-            const { fields } = record;
-            const { coordonnees } = fields;
+            const { coordonnees } = record;
             if (coordonnees) {
               const { lat, lon } = coordonnees;
               return (
                 <Marker key={record.recordid} position={[lat, lon]}>
                   <Popup>
                     <div>
-                      <h2>{fields.nom}</h2>
-                      <p>{fields.adresse}</p>
-                      <p>{fields.libelle_profession}</p>
+                      <h2>{record.nom}</h2>
+                      <p>{record.adresse}</p>
+                      <p>{record.libelle_profession}</p>
                     </div>
                   </Popup>
                 </Marker>
@@ -58,3 +58,5 @@ const MapComponent = () => {
 };
 
 export default MapComponent;
+
+

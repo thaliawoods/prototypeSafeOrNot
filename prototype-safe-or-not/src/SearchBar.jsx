@@ -13,19 +13,22 @@ const SearchBar = () => {
     console.log('Search query:', query);
     // add logique de recherche
   };
-
   return (
-    <form className="search-bar" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={query}
-        onChange={handleChange}
-        placeholder="Rechercher..."
-        className="search-input"
-      />
-      <button type="submit" className="search-button">Rechercher</button>
-    </form>
+    <div>
+      <h1>Trouve le médecin qui te convient</h1>
+      <form className="search-bar" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={query}
+          onChange={handleChange}
+          placeholder="Rechercher..."
+          className="search-input"
+        />
+        <button type="submit" className="search-button">Rechercher</button>
+      </form>
+    </div>
   );
 };
+
 
 export default SearchBar;
