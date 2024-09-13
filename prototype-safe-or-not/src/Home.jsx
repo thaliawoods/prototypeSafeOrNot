@@ -1,5 +1,5 @@
 import './Home.css'
-import SearchBar from './SearchBar';
+import SearchBar from './components/SearchBar';
 import attentionMignon from './assets/attention-mignon.png';
 
 const Home = () => {

@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 import Home from './Home'
-import Footer from './Footer';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MapComponent from './Map'; 
-import MedecinsList from './MedecinsList'; 
-import NavigationButtons from './NavigationButtons';
-import { SignUp, Login, Homepage } from './pages';
+import MapComponent from './components/Map'; 
+import MedecinsList from './pages/MedecinsList'; 
+import NavigationButtons from './components/NavigationButtons';
+import { SignUp, Login, Homepage } from '.';
 
 const App = () => {
 
