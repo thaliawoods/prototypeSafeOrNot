@@ -1,44 +1,50 @@
 .navbar {
-    background-color: pink;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px 10px; 
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
-  
-  .navbar-container {
-    display: flex;
-    width: 100%;
-    max-width: 1280px; 
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto; 
-    padding: 0 20px;
-    box-sizing: border-box;
-    padding-right: 20px; 
-
-  }
-  
-  .navbar-left,
-  .navbar-right {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    padding: 0 10px; 
-
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
-  
-  .navbar-left {
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  
-  .navbar-right {
-    font-size: 1em;
-  }
-  
+
+.navbar-container {
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.navbar-left,
+.navbar-right {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.navbar-left {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navbar-right {
+  font-size: 1em;
+}
+
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-right a:hover {
+  text-decoration: underline;
+}

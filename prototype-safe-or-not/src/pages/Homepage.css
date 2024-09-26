@@ -1,0 +1,16 @@
+.home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home-image {
+    max-width: 10%; 
+    height: auto; 
+    margin-top: 20px;
+    display: block;
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+
+
+
